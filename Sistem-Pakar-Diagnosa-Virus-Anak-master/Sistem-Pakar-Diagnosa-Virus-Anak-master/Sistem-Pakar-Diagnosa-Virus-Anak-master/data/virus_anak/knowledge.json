@@ -1,0 +1,41 @@
+{
+  "target": [
+    {
+      "name": "Cacar Air",
+      "rules": {
+        "1": "demam",
+        "2": "pusing",
+        "3": "lemas",
+        "4": "nyeri tenggorokan",
+        "5": "selera makan menurun",
+        "6": "timbul ruam merah"
+      }
+    },
+    {
+      "name": "Gondongan",
+      "rules": {
+        "1": "pipi bengkak",
+        "2": "demam",
+        "3": "nyeri saat mengunyah makanan",
+        "4": "nyeri saat menelan makanan",
+        "5": "mulut kering",
+        "6": "sakit kepala",
+	      "7": "nyeri sendi",
+	      "8": "nyeri perut",
+	      "9": "selera makan menurun",
+	      "10": "hilang nafsu makan"
+      }
+    },
+    {
+      "name": "Campak",
+      "rules": {
+        "1": "batuk",
+        "2": "pilek",
+        "3": "demam",
+        "4": "muncul bercak putih di mulut",
+        "5": "timbulnya ruam kemerahan di wajah",
+        "6": "timbul ruam merah"
+      }
+    }
+  ]
+}

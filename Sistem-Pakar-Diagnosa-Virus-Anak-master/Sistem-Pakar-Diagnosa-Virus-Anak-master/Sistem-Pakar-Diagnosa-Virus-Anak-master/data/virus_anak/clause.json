@@ -1,0 +1,9 @@
+{
+  "1": {
+    "question": "Apa gejala yang kamu rasakan?",
+    "answer": {
+      "positive": "Aku rasa kamu mengalami gejala ",
+      "negative": "Aku tidak yakin tetapi kamu menunjukkan beberapa gejala "
+    }
+  }
+}

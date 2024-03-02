@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deteksi Virus Anak</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <link
+      href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to right, #87ceeb, #f0f8ff);
+        position: relative;
+      }
+
+      label {
+        background-color: #6db9ef;
+        padding: 10px;
+        margin: 0 0 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 28px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+      }
+
+      label:hover {
+        background: #9bb8cd;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 8px;
+        border-radius: 50%;
+        /* Hapus kotak centang default */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #4169e1;
+        background-color: #fff;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: #4169e1;
+        border: 2px solid #fff;
+      }
+
+      .btn.btn-primary {
+        display: inline-flex;
+        padding: 15.5px 28px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+        color: black;
+        cursor: pointer;
+        margin-bottom: 60px;
+      }
+
+      .btn.btn-primary:hover {
+        background-color: #9bb8cd;
+      }
+
+      .text-muted {
+        color: #242331;
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+        font-size: 54.377px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+
+      legend {
+        color: #202020;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 129.023%;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #6db9ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer p {
+        color: black;
+        margin: 0;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Deteksi Virus Anak</h3>
+      </div>
+      <form role="form" action="" enctype="multipart/form-data" method="post">
+        <legend>Gejala yang dirasakan</legend>
+
+        <div class="form-group">
+          <label
+            ><input type="checkbox" value="demam" name="list_checkbox" />
+            Demam</label
+          >
+          <label
+            ><input type="checkbox" value="pusing" name="list_checkbox" />
+            Pusing</label
+          >
+          <label
+            ><input type="checkbox" value="lemas" name="list_checkbox" />
+            Lemas</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="nyeri tenggorokan"
+              name="list_checkbox"
+            />
+            Nyeri Tenggorokan</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="selera makan menurun"
+              name="list_checkbox"
+            />
+            Selera makan menurun</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="timbul ruam merah"
+              name="list_checkbox"
+            />
+            Timbul ruam merah</label
+          >
+          <label
+            ><input type="checkbox" value="pipi bengkak" name="list_checkbox" />
+            Pipi Bengkak</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="nyeri saat mengunyah makanan"
+              name="list_checkbox"
+            />
+            Nyeri saat mengunyah makanan</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="nyeri saat menelan makanan"
+              name="list_checkbox"
+            />
+            Nyeri saat menelan makanan</label
+          >
+          <label
+            ><input type="checkbox" value="mulut kering" name="list_checkbox" />
+            Mulut kering</label
+          >
+          <label
+            ><input type="checkbox" value="sakit kepala" name="list_checkbox" />
+            Sakit kepala</label
+          >
+          <label
+            ><input type="checkbox" value="nyeri Sendi" name="list_checkbox" />
+            Nyeri Sendi</label
+          >
+          <label
+            ><input type="checkbox" value="nyeri Perut" name="list_checkbox" />
+            Nyeri Perut</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="hilang Nafsu Makan"
+              name="list_checkbox"
+            />
+            Hilang Nafsu Makan</label
+          >
+          <label
+            ><input type="checkbox" value="batuk" name="list_checkbox" />
+            Batuk</label
+          >
+          <label
+            ><input type="checkbox" value="pilek" name="list_checkbox" />
+            Pilek</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="muncul bercak putih di mulut"
+              name="list_checkbox"
+            />
+            Muncul bercak putih di mulut</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="timbulnya ruam kemerahan di wajah"
+              name="list_checkbox"
+            />
+            Timbulnya ruam kemerahan di wajah</label
+          >
+          <br />
+          <p class="text-left">
+            <input class="btn btn-primary" type="submit" value="Deteksi" />
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p>By Kelompok 5 😊</p>
+  </footer>
+</html>

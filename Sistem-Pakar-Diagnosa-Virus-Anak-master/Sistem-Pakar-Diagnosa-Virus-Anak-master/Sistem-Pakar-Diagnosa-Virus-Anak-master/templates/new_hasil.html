@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deteksi Virus Anak</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <link
+      href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .btn-file {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-file input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+      }
+
+      label {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 0 0 10px;
+        display: block;
+      }
+
+      label:hover {
+        background: #eee;
+        cursor: pointer;
+      }
+
+      body {
+        background: linear-gradient(to right, #87ceeb, #f0f8ff);
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .transparent-box {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* 0.5 is the transparency level */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .btn.btn-primary {
+        display: inline-flex;
+        padding: 15.5px 28px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+        color: black;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn.btn-primary:hover {
+        background-color: #9bb8cd;
+      }
+
+      .text-muted {
+        color: #242331;
+        font-family: "Nunito", sans-serif;
+        font-size: 54.377px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="transparent-box">
+      <div class="header">
+        <h3 class="text-muted">Deteksi Virus Anak</h3>
+      </div>
+      <h1>Hasil Analisa</h1>
+      <br />
+      <p class="h5">{{ inferensi }}</p>
+      <br />
+      <a class="btn btn-primary" href="/" role="button">Kembali</a>
+    </div>
+  </body>
+</html>
